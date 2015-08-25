@@ -57,7 +57,7 @@ start-sleep 2
                  }
 
         #CHECK IF ENCRYPTION HAS STARTED.
-        $CHECKSTATUSP = ($dodecryp | Select-String "ba4d" -SimpleMatch  ) 
+        $CHECKSTATUSP = ($dodecryp | Select-String "removal process" -SimpleMatch  ) 
           if($CHECKSTATUSP)
           {
                  $DSTATUS = "`tDISK DE-CRYPTION STARTED WITH THIS PASSWORD"
